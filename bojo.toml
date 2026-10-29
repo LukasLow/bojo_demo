@@ -13,5 +13,5 @@ strip  = true
 
 [[deps-from]]
 repo  = "https://github.com/LukasLow/bojo_demo_pkg"
-tag   = "addition/v0.1.0"
+tag   = "addition/v0.0.1"
 libs  = ["addition"]

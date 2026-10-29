@@ -12,7 +12,7 @@ bojo build
 ```toml
 [[deps-from]]
 repo  = "https://github.com/LukasLow/bojo_demo_pkg"
-tag   = "addition/v0.1.0"
+tag   = "addition/v0.0.1"
 libs  = ["addition"]
 ```
 
@@ -27,7 +27,7 @@ No `-I`, no linker flag, no path — and the same source works on macOS and Linu
 ## Why `[[deps-from]]` and not `[deps-from."<url>"]`
 
 Because one repository may publish several packages, each with its own tag
-(`addition/v0.1.0`, `hello/v0.1.0`). A table per repository could hold only one
+(`addition/v0.0.1`, `hello/v0.1.0`). A table per repository could hold only one
 version; an array of tables holds one entry per (repository, version).
 
 ## License
