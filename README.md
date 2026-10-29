@@ -1,12 +1,16 @@
 # bojo_demo
 
-A project that consumes a package from another repository and bundles numpy —
-no `-I`, no linker flag, no virtualenv.
+A project that consumes a package from another repository and bundles Python
+with numpy — no `-I`, no linker flag, no virtualenv.
 
 ```bash
 bojo build
 ./.out/bojo_demo
 ```
+
+The result is **one file** (~200 MB): Mojo runtime, numpy and the interpreter
+travel inside it. The first start unpacks it into `~/.cache/bojo/run/<hash>/`,
+every later start runs from there.
 
 ## What it demonstrates
 
