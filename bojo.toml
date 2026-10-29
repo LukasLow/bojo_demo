@@ -15,7 +15,7 @@ include = [".bojo/gen"]
 
 [linker]
 libdirs = [".bojo/native"]
-libs    = ["cprint", "rssum", "request"]
+libs    = ["cprint", "rssum", "request", "tls"]
 
 [deps.python]
 numpy = "2.1.0"
@@ -23,7 +23,7 @@ numpy = "2.1.0"
 [[deps-from]]
 repo = "https://github.com/LukasLow/bojo_demo_pkg"
 tag  = "v0.0.1"
-libs = ["addition", "cprint", "randomname", "rssum", "a"]
+libs = ["addition", "cprint", "randomname", "rssum", "a", "tls"]
 
 [[deps-from]]
 repo = "https://github.com/LukasLow/mojolib"
@@ -35,7 +35,8 @@ addition = "mathx"
 
 [hooks]
 pre-build = [
-  ["sh", "-c", "mkdir -p .bojo/native && cc -shared -fPIC -O2 -o .bojo/native/librequest.so .vendor/github/com/LukasLow/mojolib/request/request.c -l:libcurl.so.4"],
+  ["sh", "-c", "mkdir -p .bojo/native && case \"$(uname -s)\" in Darwin) L=-lcurl;; *) L=-l:libcurl.so.4;; esac; cc -shared -fPIC -O2 -o .bojo/native/librequest.so .vendor/github/com/LukasLow/mojolib/request/request.c $L"],
   ["sh", "-c", "mkdir -p .bojo/native && cc -shared -fPIC -O2 -o .bojo/native/libcprint.so .vendor/github/com/LukasLow/bojo_demo_pkg/cprint/cprint.c"],
   ["sh", "-c", "cargo build --release --manifest-path .vendor/github/com/LukasLow/bojo_demo_pkg/rssum/Cargo.toml --target-dir .bojo/native/cargo && cp .bojo/native/cargo/release/librssum.so .bojo/native/"],
+  ["sh", "-c", "cargo build --release --manifest-path .vendor/github/com/LukasLow/bojo_demo_pkg/tls/Cargo.toml --target-dir .bojo/native/cargo-tls && cp .bojo/native/cargo-tls/release/libtls.so .bojo/native/"],
 ]

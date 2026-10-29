@@ -1,6 +1,7 @@
 from mathx import add, multiply
 from github.com.LukasLow.bojo_demo_pkg.a import chain
 from github.com.LukasLow.mojolib.request import get
+from github.com.LukasLow.bojo_demo_pkg.tls import ready, root_count
 from github.com.LukasLow.bojo_demo_pkg.cprint import banner, rule, show
 from github.com.LukasLow.bojo_demo_pkg.randomname import name
 from github.com.LukasLow.bojo_demo_pkg.rssum import add as rssum_add, sum_of_squares
@@ -13,6 +14,7 @@ def main() raises:
     print("6 * 7  =", multiply(6, 7))
     rule(38)
     print("http status:", get("https://example.com", 10, 120))
+    print("tls roots:", root_count(), "ready:", ready())
     rule(38)
     show("transitive dep", chain())
     rule(38)
