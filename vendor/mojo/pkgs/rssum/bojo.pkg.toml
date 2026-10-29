@@ -1,0 +1,7 @@
+schema = 1
+[pkg.rssum]
+modules = ["rssum"]
+
+[pkg.rssum.linker]
+libs = ["rssum"]
+ffi  = ["Cargo.toml", "src/lib.rs"]

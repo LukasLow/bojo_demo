@@ -1,0 +1,5 @@
+[pkg.a]
+modules = ["a"]
+
+[pkg.a.deps.z]
+in-repo = "z"
