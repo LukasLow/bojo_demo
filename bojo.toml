@@ -8,7 +8,7 @@ mojo   = "1.2.0"
 python = "3.12"
 
 [build]
-output  = "dir"
+output  = "onefile"
 strip   = true
 include = [".bojo/gen"]
 
@@ -28,6 +28,11 @@ libs = ["addition"]
 repo = "https://github.com/LukasLow/bojo_demo_pkg"
 tag  = "cprint/v0.0.1"
 libs = ["cprint"]
+
+[[deps-from]]
+repo = "https://github.com/LukasLow/bojo_demo_pkg"
+tag  = "randomname/v0.0.1"
+libs = ["randomname"]
 
 [hooks]
 pre-build = [
