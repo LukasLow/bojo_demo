@@ -1,6 +1,7 @@
 from addition import add, multiply
 from cprint import banner, rule, show
 from randomname import name
+from rssum import add as rssum_add, sum_of_squares
 from std.python import Python
 
 
@@ -8,6 +9,9 @@ def main() raises:
     banner()
     print("2 + 40 =", add(2, 40))
     print("6 * 7  =", multiply(6, 7))
+    rule(38)
+    show("rust 2+40", String(rssum_add(2, 40)))
+    show("rust sum of squares(1..10)", String(sum_of_squares(10)))
     rule(38)
     show("name(0)", name(0))
     show("name(3)", name(3))
