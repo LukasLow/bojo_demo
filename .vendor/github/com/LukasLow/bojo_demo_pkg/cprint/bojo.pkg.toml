@@ -1,0 +1,7 @@
+schema = 1
+[pkg.cprint]
+modules = ["github.com.LukasLow.bojo_demo_pkg.cprint"]
+
+[pkg.cprint.linker]
+libs = ["github.com.LukasLow.bojo_demo_pkg.cprint"]
+ffi  = ["cprint.c"]

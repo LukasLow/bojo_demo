@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "path": "github.com.LukasLow.bojo_demo_pkg.a",
+      "dir": "github/com/LukasLow/bojo_demo_pkg/a",
+      "pkg": "a",
+      "repo": "https://github.com/LukasLow/bojo_demo_pkg",
+      "tag": "a/v0.0.1",
+      "commit": "523ee90e3dddadefd16dbcf671fd679216d0bb75"
+    },
+    {
+      "path": "github.com.LukasLow.bojo_demo_pkg.addition",
+      "dir": "github/com/LukasLow/bojo_demo_pkg/addition",
+      "pkg": "addition",
+      "repo": "https://github.com/LukasLow/bojo_demo_pkg",
+      "tag": "addition/v0.0.2",
+      "commit": "523ee90e3dddadefd16dbcf671fd679216d0bb75"
+    },
+    {
+      "path": "github.com.LukasLow.bojo_demo_pkg.cprint",
+      "dir": "github/com/LukasLow/bojo_demo_pkg/cprint",
+      "pkg": "cprint",
+      "repo": "https://github.com/LukasLow/bojo_demo_pkg",
+      "tag": "cprint/v0.0.1",
+      "commit": "523ee90e3dddadefd16dbcf671fd679216d0bb75"
+    },
+    {
+      "path": "github.com.LukasLow.bojo_demo_pkg.randomname",
+      "dir": "github/com/LukasLow/bojo_demo_pkg/randomname",
+      "pkg": "randomname",
+      "repo": "https://github.com/LukasLow/bojo_demo_pkg",
+      "tag": "randomname/v0.0.1",
+      "commit": "523ee90e3dddadefd16dbcf671fd679216d0bb75"
+    },
+    {
+      "path": "github.com.LukasLow.bojo_demo_pkg.rssum",
+      "dir": "github/com/LukasLow/bojo_demo_pkg/rssum",
+      "pkg": "rssum",
+      "repo": "https://github.com/LukasLow/bojo_demo_pkg",
+      "tag": "rssum/v0.0.1",
+      "commit": "523ee90e3dddadefd16dbcf671fd679216d0bb75"
+    },
+    {
+      "path": "github.com.LukasLow.bojo_demo_pkg.z",
+      "dir": "github/com/LukasLow/bojo_demo_pkg/z",
+      "pkg": "z",
+      "repo": "https://github.com/LukasLow/bojo_demo_pkg",
+      "tag": "a/v0.0.1",
+      "commit": "523ee90e3dddadefd16dbcf671fd679216d0bb75",
+      "required_by": [
+        "github.com.LukasLow.bojo_demo_pkg.a"
+      ]
+    }
+  ]
+}

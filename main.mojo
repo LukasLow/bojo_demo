@@ -1,8 +1,8 @@
-from addition import add, multiply
-from a import chain
-from cprint import banner, rule, show
-from randomname import name
-from rssum import add as rssum_add, sum_of_squares
+from github.com.LukasLow.bojo_demo_pkg.addition import add, multiply
+from github.com.LukasLow.bojo_demo_pkg.a import chain
+from github.com.LukasLow.bojo_demo_pkg.cprint import banner, rule, show
+from github.com.LukasLow.bojo_demo_pkg.randomname import name
+from github.com.LukasLow.bojo_demo_pkg.rssum import add as rssum_add, sum_of_squares
 from std.python import Python
 
 

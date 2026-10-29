@@ -1,0 +1,6 @@
+schema = 1
+[pkg.randomname]
+modules = ["github.com.LukasLow.bojo_demo_pkg.randomname"]
+
+[pkg.randomname.linker]
+runtime = ["names.txt"]
