@@ -1,0 +1,17 @@
+[project]
+name    = "bojo_demo"
+version = "0.1.0"
+entry   = "main.mojo"
+
+[toolchain]
+mojo   = "1.2.0"
+target = "aarch64-apple-darwin"
+
+[build]
+output = "dir"
+strip  = true
+
+[[deps-from]]
+repo  = "https://github.com/LukasLow/bojo_demo_pkg"
+tag   = "addition/v0.1.0"
+libs  = ["addition"]
