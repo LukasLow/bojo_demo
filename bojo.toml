@@ -3,15 +3,18 @@ name    = "bojo_demo"
 version = "0.1.0"
 entry   = "main.mojo"
 
-[toolchain]
+[version]
 mojo   = "1.2.0"
-target = "aarch64-apple-darwin"
+python = "3.12"
 
 [build]
 output = "dir"
 strip  = true
 
+[deps.python]
+numpy = "2.1.0"
+
 [[deps-from]]
-repo  = "https://github.com/LukasLow/bojo_demo_pkg"
-tag   = "addition/v0.0.1"
-libs  = ["addition"]
+repo = "https://github.com/LukasLow/bojo_demo_pkg"
+tag  = "addition/v0.0.2"
+libs = ["addition"]
