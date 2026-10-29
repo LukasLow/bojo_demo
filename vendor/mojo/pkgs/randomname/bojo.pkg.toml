@@ -1,6 +1,0 @@
-schema = 1
-[pkg.randomname]
-modules = ["randomname"]
-
-[pkg.randomname.linker]
-runtime = ["names.txt"]
