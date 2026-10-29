@@ -1,0 +1,7 @@
+schema = 1
+[pkg.cprint]
+modules = ["cprint"]
+
+[pkg.cprint.linker]
+libs = ["cprint"]
+ffi  = ["cprint.c"]

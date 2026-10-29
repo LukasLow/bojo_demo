@@ -1,7 +1,0 @@
-schema = 1
-[pkg.rssum]
-modules = ["github.com.LukasLow.bojo_demo_pkg.rssum"]
-
-[pkg.rssum.linker]
-libs = ["github.com.LukasLow.bojo_demo_pkg.rssum"]
-ffi  = ["Cargo.toml", "src/lib.rs"]

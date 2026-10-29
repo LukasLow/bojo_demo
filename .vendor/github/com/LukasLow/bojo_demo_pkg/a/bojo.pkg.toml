@@ -1,5 +1,0 @@
-[pkg.a]
-modules = ["github.com.LukasLow.bojo_demo_pkg.a"]
-
-[pkg.a.deps.z]
-in-repo = "z"

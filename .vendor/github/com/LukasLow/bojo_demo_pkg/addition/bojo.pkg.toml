@@ -1,3 +1,0 @@
-schema = 1
-[pkg.addition]
-modules = ["github.com.LukasLow.bojo_demo_pkg.addition"]
