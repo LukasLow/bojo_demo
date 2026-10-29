@@ -22,28 +22,11 @@ numpy = "2.1.0"
 
 [[deps-from]]
 repo = "https://github.com/LukasLow/bojo_demo_pkg"
-tag  = "addition/v0.0.2"
-libs = ["addition"]
+tag  = "v0.0.1"
+libs = ["addition", "cprint", "randomname", "rssum", "a"]
 
-[[deps-from]]
-repo = "https://github.com/LukasLow/bojo_demo_pkg"
-tag  = "cprint/v0.0.1"
-libs = ["cprint"]
-
-[[deps-from]]
-repo = "https://github.com/LukasLow/bojo_demo_pkg"
-tag  = "randomname/v0.0.1"
-libs = ["randomname"]
-
-[[deps-from]]
-repo = "https://github.com/LukasLow/bojo_demo_pkg"
-tag  = "rssum/v0.0.1"
-libs = ["rssum"]
-
-[[deps-from]]
-repo = "https://github.com/LukasLow/bojo_demo_pkg"
-tag  = "a/v0.0.1"
-libs = ["a"]
+[alias]
+addition = "mathx"
 
 [hooks]
 pre-build = [

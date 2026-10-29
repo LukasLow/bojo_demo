@@ -1,4 +1,4 @@
-from github.com.LukasLow.bojo_demo_pkg.addition import add, multiply
+from mathx import add, multiply
 from github.com.LukasLow.bojo_demo_pkg.a import chain
 from github.com.LukasLow.bojo_demo_pkg.cprint import banner, rule, show
 from github.com.LukasLow.bojo_demo_pkg.randomname import name
