@@ -15,9 +15,9 @@ def name(seed: Int) raises -> String:
     a package can ship data without turning it into source.
     """
     var choose = Python.evaluate(
-        "lambda s, base: __import__('random').Random(s).choice("
-        "[n for n in open(__import__('os').path.join(base, 'randomname', 'names.txt'))"
-        ".read().splitlines() if n.strip()])"
+        "lambda s, base: __import__('random').Random(s).choice([n for n in"
+        " open(__import__('os').path.join(base, 'randomname',"
+        " 'names.txt')).read().splitlines() if n.strip()])"
     )
     var base = Python.import_module("os").environ["BOJO_DATA"]
     return String(choose(seed, base))

@@ -20,4 +20,6 @@ def rule(width: Int):
 
 def show(label: String, value: String):
     """Print `label = value` from C code."""
-    external_call["cprint_text", NoneType](label.unsafe_ptr(), value.unsafe_ptr())
+    external_call["cprint_text", NoneType](
+        label.unsafe_ptr(), value.unsafe_ptr()
+    )
