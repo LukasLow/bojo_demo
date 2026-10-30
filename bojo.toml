@@ -22,12 +22,37 @@ numpy = "2.1.0"
 
 [[deps-from]]
 repo = "https://github.com/LukasLow/bojo_demo_pkg"
-tag  = "v0.0.1"
-libs = ["addition", "cprint", "randomname", "rssum", "a", "tls"]
+tag  = "addition@v0.0.2"
+libs = ["addition"]
+
+[[deps-from]]
+repo = "https://github.com/LukasLow/bojo_demo_pkg"
+tag  = "a@v0.0.1"
+libs = ["a"]
+
+[[deps-from]]
+repo = "https://github.com/LukasLow/bojo_demo_pkg"
+tag  = "cprint@v0.0.1"
+libs = ["cprint"]
+
+[[deps-from]]
+repo = "https://github.com/LukasLow/bojo_demo_pkg"
+tag  = "randomname@v0.0.1"
+libs = ["randomname"]
+
+[[deps-from]]
+repo = "https://github.com/LukasLow/bojo_demo_pkg"
+tag  = "rssum@v0.0.1"
+libs = ["rssum"]
+
+[[deps-from]]
+repo = "https://github.com/LukasLow/bojo_demo_pkg"
+tag  = "tls@v0.0.1"
+libs = ["tls"]
 
 [[deps-from]]
 repo = "https://github.com/LukasLow/mojolib"
-tag  = "v0.0.1"
+tag  = "request@v0.0.1"
 libs = ["request"]
 
 [alias]
