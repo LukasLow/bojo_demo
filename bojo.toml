@@ -20,43 +20,16 @@ libs    = ["cprint", "rssum", "request", "tls"]
 [deps.python]
 numpy = "2.1.0"
 
-[[deps-from]]
-repo = "https://github.com/LukasLow/bojo_demo_pkg"
-tag  = "addition@v0.0.2"
-libs = ["addition"]
+[deps-from."https://github.com/LukasLow/bojo_demo_pkg"]
+a          = "v0.0.1"
+addition   = { version = "v0.0.2", as = "mathx" }
+cprint     = "v0.0.1"
+randomname = "v0.0.1"
+rssum      = "v0.0.1"
+tls        = "v0.0.1"
 
-[[deps-from]]
-repo = "https://github.com/LukasLow/bojo_demo_pkg"
-tag  = "a@v0.0.1"
-libs = ["a"]
-
-[[deps-from]]
-repo = "https://github.com/LukasLow/bojo_demo_pkg"
-tag  = "cprint@v0.0.1"
-libs = ["cprint"]
-
-[[deps-from]]
-repo = "https://github.com/LukasLow/bojo_demo_pkg"
-tag  = "randomname@v0.0.1"
-libs = ["randomname"]
-
-[[deps-from]]
-repo = "https://github.com/LukasLow/bojo_demo_pkg"
-tag  = "rssum@v0.0.1"
-libs = ["rssum"]
-
-[[deps-from]]
-repo = "https://github.com/LukasLow/bojo_demo_pkg"
-tag  = "tls@v0.0.1"
-libs = ["tls"]
-
-[[deps-from]]
-repo = "https://github.com/LukasLow/mojolib"
-tag  = "request@v0.0.1"
-libs = ["request"]
-
-[alias]
-addition = "mathx"
+[deps-from."https://github.com/LukasLow/mojolib"]
+request = "v0.0.1"
 
 [hooks]
 pre-build = [
