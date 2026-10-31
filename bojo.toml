@@ -1,40 +1,23 @@
 schema = 1
+
 [project]
 name    = "bojo_demo"
 version = "0.1.0"
 entry   = "main.mojo"
 
 [version]
-mojo   = "1.2.0"
-python = "3.12"
+mojo = "1.2.0"
 
 [build]
-output  = "onefile"
-strip   = true
-include = [".bojo/gen"]
+output = "dir"
+strip  = true
 
-[linker]
-libdirs = [".bojo/native"]
-libs    = ["cprint", "rssum", "request", "tls"]
+[deps-from."https://github.com/LukasLow/bojo_demo_math"]
+version = "v0.1.0"
 
-[deps.python]
-numpy = "2.1.0"
+[deps-from."https://github.com/LukasLow/bojo_demo_hello"]
+version = "v0.1.0"
 
-[deps-from."https://github.com/LukasLow/bojo_demo_pkg"]
-a          = "v0.0.1"
-addition   = { version = "v0.0.2", as = "mathx" }
-cprint     = "v0.0.1"
-randomname = "v0.0.1"
-rssum      = "v0.0.1"
-tls        = "v0.0.1"
-
-[deps-from."https://github.com/LukasLow/mojolib"]
-request = "v0.0.1"
-
-[hooks]
-pre-build = [
-  ["sh", "-c", "mkdir -p .bojo/native && case \"$(uname -s)\" in Darwin) L=-lcurl;; *) L=-l:libcurl.so.4;; esac; cc -shared -fPIC -O2 -o .bojo/native/librequest.so .vendor/github/com/LukasLow/mojolib/request/request.c $L"],
-  ["sh", "-c", "mkdir -p .bojo/native && cc -shared -fPIC -O2 -o .bojo/native/libcprint.so .vendor/github/com/LukasLow/bojo_demo_pkg/cprint/cprint.c"],
-  ["sh", "-c", "cargo build --release --manifest-path .vendor/github/com/LukasLow/bojo_demo_pkg/rssum/Cargo.toml --target-dir .bojo/native/cargo && cp .bojo/native/cargo/release/librssum.so .bojo/native/"],
-  ["sh", "-c", "cargo build --release --manifest-path .vendor/github/com/LukasLow/bojo_demo_pkg/tls/Cargo.toml --target-dir .bojo/native/cargo-tls && cp .bojo/native/cargo-tls/release/libtls.so .bojo/native/"],
-]
+# Only the project may shorten a name, and only here, keyed by module path.
+[alias]
+"gh.LukasLow.bojo_demo_math" = "mathx"

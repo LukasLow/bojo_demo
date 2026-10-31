@@ -2,51 +2,16 @@ version = 1
 mojo = ""
 
 [[package]]
-  name = "github.com.LukasLow.bojo_demo_pkg.a"
-  repo = "https://github.com/LukasLow/bojo_demo_pkg"
-  tag = "v0.0.1"
-  commit = "523ee90e3dddadefd16dbcf671fd679216d0bb75"
-  tree = "git-tree:74171d0325ca64b828270d3733d3494f7fcea4b6"
+  name = "gh.LukasLow.bojo_demo_hello"
+  repo = "https://github.com/LukasLow/bojo_demo_hello"
+  tag = "v0.1.0"
+  commit = "25f6236b2426fbc8ae996ddf96b4d96bb202af7a"
+  tree = "git-tree:97944c4832a617f70543d333c576d49fc18ce42f"
 
 [[package]]
-  name = "github.com.LukasLow.bojo_demo_pkg.addition"
-  repo = "https://github.com/LukasLow/bojo_demo_pkg"
-  tag = "v0.0.1"
-  commit = "523ee90e3dddadefd16dbcf671fd679216d0bb75"
-  tree = "git-tree:74171d0325ca64b828270d3733d3494f7fcea4b6"
+  name = "gh.LukasLow.bojo_demo_math"
+  repo = "https://github.com/LukasLow/bojo_demo_math"
+  tag = "v0.1.0"
+  commit = "a0a032b50f7670ae6859fc498a88c64c4ee9f511"
+  tree = "git-tree:e7968db98abf4e456783ab59a8a579dfa31cfc51"
   alias = "mathx"
-
-[[package]]
-  name = "github.com.LukasLow.bojo_demo_pkg.cprint"
-  repo = "https://github.com/LukasLow/bojo_demo_pkg"
-  tag = "v0.0.1"
-  commit = "523ee90e3dddadefd16dbcf671fd679216d0bb75"
-  tree = "git-tree:74171d0325ca64b828270d3733d3494f7fcea4b6"
-
-[[package]]
-  name = "github.com.LukasLow.bojo_demo_pkg.randomname"
-  repo = "https://github.com/LukasLow/bojo_demo_pkg"
-  tag = "v0.0.1"
-  commit = "523ee90e3dddadefd16dbcf671fd679216d0bb75"
-  tree = "git-tree:74171d0325ca64b828270d3733d3494f7fcea4b6"
-
-[[package]]
-  name = "github.com.LukasLow.bojo_demo_pkg.rssum"
-  repo = "https://github.com/LukasLow/bojo_demo_pkg"
-  tag = "v0.0.1"
-  commit = "523ee90e3dddadefd16dbcf671fd679216d0bb75"
-  tree = "git-tree:74171d0325ca64b828270d3733d3494f7fcea4b6"
-
-[[package]]
-  name = "github.com.LukasLow.bojo_demo_pkg.z"
-  repo = "https://github.com/LukasLow/bojo_demo_pkg"
-  tag = "v0.0.1"
-  commit = "523ee90e3dddadefd16dbcf671fd679216d0bb75"
-  tree = "git-tree:74171d0325ca64b828270d3733d3494f7fcea4b6"
-
-[[package]]
-  name = "github.com.LukasLow.mojolib.request"
-  repo = "https://github.com/LukasLow/mojolib"
-  tag = "v0.0.1"
-  commit = "95d7207ff062a697d70ebea957d20578c4058003"
-  tree = "git-tree:2fc7ed53b80f10b6248f0229408cdb40ede574bc"
